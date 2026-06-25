@@ -32,19 +32,14 @@ header{
 /* LOGO */
 
 .logo{
-    position:absolute;
-    top:30px;
-    left:42px;
-
-    width:310px;
-
-    border-radius:50%;
-
-    background:#ffffff;
-
-    padding:15px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+width:180px;
+display:block;
+margin:0 auto 30px auto;
+position:static;
+border-radius:50%;
+background:#ffffff;
+padding:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
 }
 
 /* HERO CONTENT */
@@ -52,6 +47,7 @@ header{
 .hero-content{
     max-width:900px;
     margin:auto;
+    padding-top: 30px;
 }
 
 h1{
@@ -650,4 +646,31 @@ width:95%;
 padding:20px;
 }
 
+}
+@media screen and (max-width:768px){
+
+.about-container{
+display:flex;
+flex-direction:column;
+}
+
+.about-image{
+width:100%;
+}
+
+.about-text{
+width:100%;
+margin-top:20px;
+}
+
+}
+.card{
+    min-height: 100vh;
+}
+.section-tagline{
+text-align:center;
+font-size:28px;
+font-weight:700;
+color:#166534;
+margin-bottom:40px;
 }
