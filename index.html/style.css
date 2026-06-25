@@ -24,9 +24,15 @@ header{
     background-position:center;
     background-repeat:no-repeat;
 
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     text-align:center;
 
-    padding:180px 20px;
+    padding:20px;
 }
 
 /* LOGO */
@@ -45,7 +51,7 @@ box-shadow:0 8px 25px rgba(0,0,0,0.15);
 /* HERO CONTENT */
 
 .hero-content{
-    max-width:900px;
+    max-width:700px;
     margin:auto;
     padding-top: 30px;
 }
@@ -128,12 +134,17 @@ footer{
 
 /* MOBILE */
 
-@media(max-width:768px){
+@media screen and (max-width:768px){
 
 .logo{
-    width:120px;
-    left:15px;
-    top:15px;
+    position:relative;
+    width:140px;
+    display:block;
+    margin:0 auto 20px auto;
+    left:auto;
+    top:auto;
+}
+
 }
 
 h1{
@@ -204,7 +215,8 @@ margin-top:30px;
 
 background:white;
 
-width:300px;
+width:100%;
+max-width: 500px;
 
 border-radius:20px;
 
@@ -311,33 +323,15 @@ z-index:999;
 
 }
 .gallery{
-
-display:flex;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
 }
 
 .gallery img{
-
-width:300px;
-
-height:220px;
-
-object-fit:cover;
-
-transition:.3s;
-
-}
-
-.gallery img:hover{
-
-transform:scale(1.05);
-
+    width:100%;
+    height:180px;
+    object-fit:cover;
 }
 .card{
 
@@ -521,41 +515,43 @@ transform:rotate(360deg);
 }
 @media screen and (max-width:768px){
 
-.logo{
-position:relative;
-top:0;
-left:0;
-width:140px;
-display:block;
-margin:0 auto 20px auto;
+.gallery{
+    grid-template-columns:1fr 1fr;
 }
 
-nav{
-gap:10px;
-padding:12px 5px;
-flex-wrap:wrap;
 }
-
-nav a{
-font-size:13px;
-}
+@media screen and (max-width:768px){
 
 header{
-padding:120px 15px;
+    min-height:100vh;
+    padding:20px;
+}
+
+.logo{
+    position:relative;
+    width:140px;
+    display:block;
+    margin:0 auto 20px auto;
+    left:auto;
+    top:auto;
 }
 
 h1{
-font-size:52px;
-line-height:1.1;
+    font-size:52px;
+    margin:10px 0;
 }
 
 header h2{
-font-size:32px;
-line-height:1.3;
+    font-size:38px;
+    font-weight:700;
+    margin:15px 0;
 }
 
 header p{
-font-size:20px;
+    font-size:22px;
+    line-height:1.5;
+}
+
 }
 
 .product-card{
