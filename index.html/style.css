@@ -147,17 +147,6 @@ footer{
 
 @media screen and (max-width:768px){
 
-.logo{
-    position:relative;
-    width:140px;
-    display:block;
-    margin:0 auto 20px auto;
-    left:auto;
-    top:auto;
-}
-
-}
-
 /* NAVIGATION */
 
 nav{
@@ -591,31 +580,33 @@ header{
 }
 
 .logo{
-    width:220px;
-    max-width: 70vw;
-    margin-bottom:25px;
-    padding: 15px;
+    width:500px;
+    max-width: 100vw;
+    margin-bottom:50px;
+    padding: 25px;
 }
 
 h1{
-    font-size:70px;
+    font-size:150px;
     margin:20px 0;
 }
 
 header h2{
-    font-size:45px;
+    font-size:100px;
     margin:20px 0;
     line-height: 1.3;
 }
 
 header p{
-    font-size:35px;
+    font-size:75px;
     line-height:1.6;
 }
 
 .btn{
-    padding:12px 24px;
-    font-size:15px;
+    padding:25px 46px;
+    font-size:35px;
+    border-radius: 35px;
+    font-weight: bold;
 }
 
 }
@@ -646,29 +637,29 @@ header p{
 @media screen and (max-width:768px){
 
 .hero-social img{
-    width:95px;
-    height:95px;
+    width:150px;
+    height:15px;
 }
 
 }
 @media screen and (max-width:768px){
 
 nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position:fixed;
+    top:12px;
+    left:50%;
+    transform:translateX(-50%);
 
-    flex-wrap:nowrap;
+    width:auto;
 
-    gap:12px;
+    gap:10px;
 
-    padding:12px 5px;
+    padding:10px 14px;
 
-    width:100%;
+    border-radius:35px;
 }
 
 nav a{
-    font-size:14px;
+    font-size:13px;
 }
-
 }
