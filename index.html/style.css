@@ -593,8 +593,8 @@ padding-bottom: 40px;
 }
 
 .logo{
-width:220px;
-max-width: 70vw;
+width:400px;
+max-width: 150vw;
 margin-bottom:25px;
 padding: 15px;
 }
@@ -624,7 +624,7 @@ font-size:15px;
 @media screen and (max-width:768px){
 
 .whatsapp-float img{
-width:150px;
+width:220px;
 }
 
 }
