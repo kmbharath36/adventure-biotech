@@ -329,6 +329,13 @@ width:100%;
 height:180px;
 object-fit:cover;
 }
+.gallery img.tall-image{
+    height:350px;
+    width: 100%;
+    object-fit:cover;
+    background: #fff;
+}
+
 .card{
 
 animation:fadeIn 1s ease;
