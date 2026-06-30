@@ -144,21 +144,6 @@ padding:30px;
 border-top:1px solid #e5e7eb;
 }
 
-/* MOBILE */
-
-@media screen and (max-width:768px){
-
-.logo{
-position:relative;
-width:140px;
-display:block;
-margin:0 auto 20px auto;
-left:auto;
-top:auto;
-}
-
-}
-
 /* NAVIGATION */
 
 nav{
@@ -599,13 +584,6 @@ padding-top: 10px;
 padding-bottom: 40px;
 }
 
-.logo{
-width:800px;
-max-width: none;
-margin: 25px;
-padding: 15px;
-}
-
 h1{
 font-size:70px;
 margin:20px 0;
@@ -689,7 +667,13 @@ font-size:14px;
     width:280px !important;
     height:auto !important;
     max-width:none !important;
-    padding:15px;
+    margin:0 auto 25px auto !important;
+    padding:18px !important;
+}
+
+.whatsapp-float img{
+    width:90px !important;
+    height:90px !important;
 }
 
 }
