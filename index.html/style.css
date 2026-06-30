@@ -683,3 +683,13 @@ font-size:14px;
 }
 
 }
+@media screen and (max-width:768px){
+
+.logo{
+    width:280px !important;
+    height:auto !important;
+    max-width:none !important;
+    padding:15px;
+}
+
+}
